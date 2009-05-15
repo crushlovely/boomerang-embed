@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Boomerang Embeds</title>
+</head>
+<body>
+  <h1>Boomerang Embed Codes</h1>
+  <h2>Nice and simple.</h2>
+
+  <hr />
+
+  <p>
+    Put the following code in the <code>&lt;head&gt;</code> of your document.
+  </p>
+  <p>
+    <strong>IMPORTANT</strong>: Requires jQuery.
+  </p>
+  <h3>Events</h3>
+  <pre>
+    &lt;script src=&quot;/javascripts/jquery-1.2.6.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/javascripts/boomerang.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;http://nygasp.boomerang.local/json/events/67/past&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;
+    $(document).ready(function() {
+      $(&#x27;#events&#x27;).insertBoomerangEvents(events);
+    });
+    &lt;/script&gt;
+  </pre>
+
+  <h3>News</h3>
+  <pre>
+    &lt;script src=&quot;/javascripts/jquery-1.2.6.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/javascripts/boomerang.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;http://nygasp.boomerang.local/json/news/68&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;
+    $(document).ready(function() {
+      $(&#x27;#news&#x27;).insertBoomerangNews(news);
+    });
+    &lt;/script&gt;
+  </pre>
+
+  <h3>Text</h3>
+  <pre>
+    &lt;script src=&quot;/javascripts/jquery-1.2.6.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/javascripts/boomerang.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;http://kimscharnberg.boomerang.local/json/text_page/99&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;
+    $(document).ready(function() {
+      $(&#x27;#text_page&#x27;).insertBoomerangTextPage(text_page);
+    });
+    &lt;/script&gt;
+  </pre>
+
+</body>
+</html>
