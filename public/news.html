@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Boomerang Embeds</title>
+  <script src="/javascripts/jquery-1.2.6.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/javascripts/application.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://nygasp.boomerang.local/json/news/68" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      $('#news').insertBoomerangNews(posts);
+    });
+  </script>
+  
+</head>
+<body>
+  <h1>Boomerang Embed Codes</h1>
+
+  <hr />
+
+  <ul>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="text.html">Text</a></li>
+  </ul>
+
+  <hr />
+
+  <pre>
+    &lt;script src=&quot;http://nygasp.boomerang.local/json/news/68&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;
+      $(document).ready(function() {
+        $(&#x27;#news&#x27;).insertBoomerangNews(news);
+      });
+    &lt;/script&gt;
+  </pre>
+  <div id="news">
+    <p>Loading content...</p>
+  </div>
+
+</body>
+</html>
